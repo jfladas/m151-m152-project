@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aufgabenverwaltung</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Tasks</a>
+            </li>
+            <li>
+                <a href="users.html">Users</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Tasks</h1>
+        <hr>
+        <!--TASK FORM-->
+        <section>
+            <div class="row">
+                <form id="form">
+                    <div>
+                        <div>
+
+                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" id="subject" placeholder="Subject">
+                            <input type="date" id="myDate">
+                        </div>
+
+                        <div class="row">
+                            <div>
+                                <textarea id="description" placeholder="Describe the Task" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="btn" onclick="add()">ADD</div>
+                            <div class="btn" onclick="myObj.hide()">CANCEL</div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="btn" onClick="myObj.show()" id="show">+</div>
+        
+        <div class="row">
+
+            <div class="col">
+                <h4>Title:</h4>
+                <p>Description</p>
+                <p>By: Creator</p>
+                <p>Due: 2021-06-08</p>
+                <div class="btn">DELETE</div>
+            </div>
+
+            <div class="col">
+                <h4>Title:</h4>
+                <p>Description</p>
+                <p>By: Creator</p>
+                <p>Due: 2021-06-08</p>
+                <div class="btn">DELETE</div>
+            </div>
+
+            <div class="col">
+                <h4>Title:</h4>
+                <p>Description</p>
+                <p>By: Creator</p>
+                <p>Due: 2021-06-08</p>
+                <div class="btn">DELETE</div>
+            </div>
+            
+            <div class="col">
+                <h4>Title:</h4>
+                <p>Description</p>
+                <p>By: Creator</p>
+                <p>Due: 2021-06-08</p>
+                <div class="btn">DELETE</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

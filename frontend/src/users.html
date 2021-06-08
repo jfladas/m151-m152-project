@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aufgabenverwaltung</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Tasks</a>
+            </li>
+            <li>
+                <a href="users.html">Users</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Users</h1>
+        <hr>
+        <!--USER FORM-->
+        <section>
+            <div class="row">
+                <form id="form">
+                    <div>
+                        <div>
+
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+
+                            <div class="btn" onclick="add()">ADD</div>
+                            <div class="btn" onclick="myObj.hide()">CANCEL</div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="btn" onClick="myObj.show()" id="show">+</div>
+
+        <div class="row">
+
+            <div class="col">
+                <h4>Name:</h4>
+                <div class="btn">DELETE</div>
+            </div>
+
+           <div class="col">
+                <h4>Name:</h4>
+                <div class="btn">DELETE</div>
+            </div>
+
+            <div class="col">
+                <h4>Name:</h4>
+                <div class="btn">DELETE</div>
+            </div>
+
+            <div class="col">
+                <h4>Name:</h4>
+                <div class="btn">DELETE</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/users.js"></script>
+</body>
+
+</html>
