@@ -1,8 +1,3 @@
-CREATE EXTENSION IF NOT EXISTS task;
-
-create sequence task_sequence start 1 increment 1;
-create sequence user_sequence start 1 increment 1;
-
 create table task
 (
     id int8 not null,

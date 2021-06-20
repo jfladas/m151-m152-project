@@ -19,15 +19,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.aufgabenverwaltung.model.Task;
 import com.example.aufgabenverwaltung.repository.TaskRepository;
 
-@CrossOrigin(origins = "http://localhost:8081")
 @RestController
-@RequestMapping("/api")
+@RequestMapping(path = "/api")
 public class TaskController {
 
 	@Autowired
 	TaskRepository taskRepository;
 
-	@GetMapping("/Tasks")
+	@GetMapping("/tasks")
 	public ResponseEntity<List<Task>> getAllTasks(@RequestParam(required = false) String title) {
 		try {
 			List<Task> tasks = new ArrayList<Task>();
