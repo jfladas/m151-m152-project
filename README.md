@@ -2,7 +2,7 @@
 
 ## Run
 
-- docker-compose up -d
+- docker-compose up -d (in docker folder)
 
 - gradlew.bat bootRun (in backend folder)
 
