@@ -13,5 +13,5 @@ var myObj= {
 };
 
 function add() {
-    //add user
+    const resp = await addUser(username.value, password.value);
 }

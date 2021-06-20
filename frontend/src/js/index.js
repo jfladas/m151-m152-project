@@ -14,5 +14,5 @@ var myObj= {
 };
 
 function add() {
-    //add task
+    const resp = await addTask(title.value, description.value);
 }
